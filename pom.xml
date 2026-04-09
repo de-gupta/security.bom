@@ -15,7 +15,6 @@
 
     <properties>
         <java.version>25</java.version>
-        <maven.compiler.release>${java.version}</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <themis.version>2.2.0</themis.version>
@@ -36,7 +35,6 @@
         <maven.central.publishing.version>0.8.0</maven.central.publishing.version>
         <maven.source.plugin.version>3.3.1</maven.source.plugin.version>
         <maven.javadoc.plugin.version>3.11.2</maven.javadoc.plugin.version>
-        <jacoco.version>0.8.14</jacoco.version>
     </properties>
 
     <dependencyManagement>
@@ -102,13 +100,6 @@
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <release>${maven.compiler.release}</release>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
                 <version>${maven.release.plugin.version}</version>
                 <configuration>
@@ -169,35 +160,6 @@
             </plugin>
         </plugins>
     </build>
-
-    <profiles>
-        <profile>
-            <id>coverage</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.jacoco</groupId>
-                        <artifactId>jacoco-maven-plugin</artifactId>
-                        <version>${jacoco.version}</version>
-                        <executions>
-                            <execution>
-                                <goals>
-                                    <goal>prepare-agent</goal>
-                                </goals>
-                            </execution>
-                            <execution>
-                                <id>report</id>
-                                <phase>verify</phase>
-                                <goals>
-                                    <goal>report</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
 
     <distributionManagement>
         <snapshotRepository>
