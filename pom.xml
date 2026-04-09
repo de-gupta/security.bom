@@ -12,8 +12,6 @@
     <url>https://github.com/de-gupta/security.bom.git</url>
 
     <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
         <themis.version>2.3.0</themis.version>
         <hermes.version>1.1.0</hermes.version>
         <augustus.version>1.0.1</augustus.version>
