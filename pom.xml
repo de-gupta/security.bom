@@ -17,10 +17,10 @@
 
     <properties>
         <themis.version>4.0.0</themis.version>
-        <hermes.version>2.0.0</hermes.version>
-        <augustus.version>2.0.0</augustus.version>
-        <argus.version>2.0.0</argus.version>
-        <argus.spring.version>2.0.0</argus.spring.version>
+        <hermes.version>3.0.0</hermes.version>
+        <augustus.version>3.0.0</augustus.version>
+        <argus.version>3.0.0</argus.version>
+        <argus.spring.version>3.0.0</argus.spring.version>
     </properties>
 
     <dependencyManagement>
