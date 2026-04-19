@@ -56,6 +56,26 @@
                 <artifactId>security.janus</artifactId>
                 <version>${janus.version}</version>
             </dependency>
+            <dependency>
+                <groupId>io.github.de-gupta</groupId>
+                <artifactId>security.janus.core</artifactId>
+                <version>${janus.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.de-gupta</groupId>
+                <artifactId>security.janus.spring</artifactId>
+                <version>${janus.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.de-gupta</groupId>
+                <artifactId>security.janus.spring.web</artifactId>
+                <version>${janus.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.de-gupta</groupId>
+                <artifactId>security.janus.idp.implementation</artifactId>
+                <version>${janus.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
