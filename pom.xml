@@ -21,6 +21,7 @@
         <augustus.version>3.0.1</augustus.version>
         <argus.version>3.0.1</argus.version>
         <argus.spring.version>3.0.1</argus.spring.version>
+        <janus.version>0.2.0</janus.version>
     </properties>
 
     <dependencyManagement>
@@ -49,6 +50,11 @@
                 <groupId>io.github.de-gupta</groupId>
                 <artifactId>security.argus.spring</artifactId>
                 <version>${argus.spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.de-gupta</groupId>
+                <artifactId>security.janus</artifactId>
+                <version>${janus.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
